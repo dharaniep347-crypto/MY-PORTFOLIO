@@ -1,7 +1,7 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import { fileURLToPath } from "node:url";
 
-const base = "/dharaniepportfolio/";
+const base = "/MY-PORTFOLIO/";
 
 export default defineConfig({
   nitro: false,
