@@ -17,14 +17,14 @@ describe("App routing", () => {
   });
   it("matches the portfolio at its GitHub Pages repository path", () => {
     const router = createRouter({ routeTree, basepath: GITHUB_PAGES_BASE,
-      history: createMemoryHistory({ initialEntries: ["/dharaniepportfolio/"] }),
+      history: createMemoryHistory({ initialEntries: ["/MY-PORTFOLIO/"] }),
       context: { queryClient: new QueryClient() } });
     expect(router.matchRoutes(router.latestLocation.pathname).at(-1)?.routeId).toBe("/");
-    expect(router.buildLocation({ to: "/" }).publicHref).toBe("/dharaniepportfolio/");
+    expect(router.buildLocation({ to: "/" }).publicHref).toBe("/MY-PORTFOLIO/");
   });
   it("matches direct admin links under the repository path", () => {
     const router = createRouter({ routeTree, basepath: GITHUB_PAGES_BASE,
-      history: createMemoryHistory({ initialEntries: ["/dharaniepportfolio/admin"] }),
+      history: createMemoryHistory({ initialEntries: ["/MY-PORTFOLIO/admin"] }),
       context: { queryClient: new QueryClient() } });
     expect(router.matchRoutes(router.latestLocation.pathname).at(-1)?.routeId).toBe("/admin");
   });

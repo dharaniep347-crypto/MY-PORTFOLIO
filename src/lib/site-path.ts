@@ -1,4 +1,4 @@
-export const GITHUB_PAGES_BASE = "/dharaniepportfolio/";
+export const GITHUB_PAGES_BASE = "/MY-PORTFOLIO/";
 
 /** Keep root-relative assets inside the deployment mount without double prefixes. */
 export function withBasePath(path: string, base = import.meta.env.BASE_URL || "/"): string {
